@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce-listing-page",
+  "version": "1.0.0",
+  "description": "display and filter products according to given json data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujsachan1990/e-cart-listing-page.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "cart",
+    "listing",
+    "page"
+  ],
+  "author": "ANUJ SACHAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anujsachan1990/e-cart-listing-page/issues"
+  },
+  "homepage": "https://github.com/anujsachan1990/e-cart-listing-page#readme",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
