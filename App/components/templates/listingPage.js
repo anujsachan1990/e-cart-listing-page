@@ -24,6 +24,11 @@ class ListingPage extends PureComponent {
     });
   }
 
+  /** 
+  * @desc filterProductsFromSize: this method set the component state as per the applied filter,
+  * so that component render the updated data on the product listing page.
+*/
+
   filterProductsFromSize(size) {
     let filterData = this.state.productData.filter(
       item => item.size.indexOf(size) > -1
