@@ -5,6 +5,13 @@ import Select from "../atoms/SelectBox";
 import ServiceURI from "../../global/services";
 import Filters from "../molecules/Filters";
 
+/** 
+  * @desc ListingPage component can be used to display a product List. This component is connected with Styled component
+  *  to add inline styles.This component renders server side. 
+  *  @productData : list of product returend from API
+  *  @filterData :  filtered List items after applying the size filers;
+*/
+
 class ListingPage extends PureComponent {
   state = {
     productData: [],
@@ -36,6 +43,11 @@ class ListingPage extends PureComponent {
     );
   }
 }
+
+/** 
+  * @desc ListingPage.getInitialProps: this method helps to pass the data to child components so that
+  * product List component can render on server side.
+*/
 
 ListingPage.getInitialProps = async ({ req }) => {
   const res = await fetch(ServiceURI.getProductData);

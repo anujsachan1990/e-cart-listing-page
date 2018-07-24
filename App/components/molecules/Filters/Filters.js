@@ -4,6 +4,12 @@ import SelectBox from "../../atoms/SelectBox";
 import config from "../../../global/config";
 import locale from "../../../global/lang";
 
+/** 
+  * @desc Filters component can be used to display Filters. This component is connected with Styled component
+  *  to add inline styles.
+  *  @filterProducts : this function is responsible for setting the filtered value in the product list
+*/
+
 const Filters = props => {
   const { filterProducts, className } = props;
   return (

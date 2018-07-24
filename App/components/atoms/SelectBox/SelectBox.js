@@ -1,6 +1,13 @@
 import { PureComponent } from "react";
 import withStyle from "../../../global/withStyle";
 
+/** 
+  * @desc SelectBox component can be used to display Select box options. This component is connected with Styled component
+  *  to add inline styles.
+  *  @options : options is mendatory props object which expect an array of object 
+  *  example : options = [{label:"size-10", value: "10"}]
+*/
+
 class SelectBox extends PureComponent {
   static defaultProps = {
     className: "",

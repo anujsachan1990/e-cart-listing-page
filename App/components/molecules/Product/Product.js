@@ -5,13 +5,19 @@ import Tag from "../../atoms/Tag";
 import locale from "../../../global/lang";
 import config from "../../../global/config";
 
+/** 
+  * @desc Product component can be used to display a Product. This component is connected with Styled component
+  *  to add inline styles.
+  *  @item : Item object contains information regarding the price, productName, productType
+*/
+
 const Product = props => {
   const { item, className } = props;
   return (
     <li className={className}>
       <Image
         src={config.staticPath + item.productImage}
-        alt={item.productName + "image"}
+        alt={item.productName}
       />
       <div>
         {item.isExclusive && (
