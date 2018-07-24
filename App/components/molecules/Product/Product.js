@@ -1,6 +1,9 @@
 import productStyle from "./Product.style";
 import withStyle from "../../../global/withStyle";
 import Image from "../../atoms/Image";
+import Tag from "../../atoms/Tag";
+import locale from "../../../global/lang";
+
 const Product = props => {
   const { item, className } = props;
   return (
@@ -10,8 +13,10 @@ const Product = props => {
         alt={item.productName + "image"}
       />
       <div>
-        {item.isExclusive && <div className="exclusive-tag">Exclusive </div>}
-        {item.isSale && <div className="sale-tag"> Sale </div>}
+        {item.isExclusive && (
+          <Tag className="exclusive-tag" tagLabel={locale.exclusive} />
+        )}
+        {item.isSale && <Tag className="sale-tag" tagLabel={locale.sale} />}
         <div className="product-description">
           <div className="product-name">{item.productName}</div>
           <div className="product-price">{item.price}</div>
