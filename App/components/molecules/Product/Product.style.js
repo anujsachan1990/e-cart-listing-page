@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 import ThemeColors from "../../../styles/theme/colors";
-
+import ThemeFonts from "../../../styles/typography";
 export default css`
 	border: 1px solid ${ThemeColors.lightGray};
 	list-style: none;
@@ -36,12 +36,12 @@ export default css`
 		align-items: baseline;
 	}
 	.product-name{
-		font-size: 17px;
+		font-size: ${ThemeFonts.productName}
 		max-width: 170px;
 		font-weight: bold;
 	}
 	.product-price {
-		font-size: 22px;
+		font-size: ${ThemeFonts.productPrice}
 		font-weight: bold;
 	}
 }`;
