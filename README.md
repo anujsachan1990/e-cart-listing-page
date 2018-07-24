@@ -77,3 +77,32 @@ Next.js is a universal JavaScript framework that runs in the browser and the ser
 -  Performance for first page load.
 -  Improved SEO.
 - Server Side Rendering to achive isomorphic Behaviour.
+
+
+## Styled-Component
+We were drawn to CSS-in-JS for the reasons mentioned above, but Styled Components in particular has been a great tool for team. Below are the main reasons we chose it.
+
+### Large & Thriving Community
+Being on the edge of a new technology is inherently risky, but we were really encouraged by the community surrounding Styled Components. The team is connected to the community and always asking for feedback. We recently started contributing back to this community by open sourcing our internal styled-components-modifiers library, and have other internal tooling we are hoping to open source when it’s ready.
+
+### Template Literal Syntax
+Using template literals to write CSS syntax in our components is a huge boost to our team’s productivity. Developers who were brand new to CSS-in-JS could immediately hop in and start writing styles. I probably could get used to writing { fontSize: “24px” }, but having a familiar syntax is really a great feature.
+
+### 
+Sass Support & Polished
+We also really liked that Sass support was bundled into the lib.
+```
+const Link = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+`;
+```
+
+Again, writing our styles in this way feels really natural and reduces lines of code at the same time. Along with the basic Sass support, there’s also Polished, a small toolset created by Styled Components to provide additional Sass functionality and other helpful tooling.
+
+### Native Mobile Support
+Our team is also in the process of developing a native mobile app with React Native. It was really important for our UI to feel consistent on mobile, and having that bundled into Styled Components is a huge win.
