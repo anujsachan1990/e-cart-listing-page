@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/anujsachan1990/e-cart-listing-page#readme",
   "dependencies": {
-    "axios": "^0.18.0",
     "next": "^6.1.1",
     "node-fetch": "^2.2.0",
     "react": "^16.1.1",
