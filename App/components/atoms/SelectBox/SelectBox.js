@@ -29,7 +29,11 @@ class SelectBox extends PureComponent {
     const { options, className } = this.props;
     return (
       <div className={`form-group select-box ${className}`}>
+        <label className="sr-only" for="select-box">
+          Select
+        </label>
         <select
+          id="select-box"
           value={this.state.value}
           onChange={e => this.onChange(e)}
           className="form-control"

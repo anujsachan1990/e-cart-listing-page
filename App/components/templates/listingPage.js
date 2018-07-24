@@ -30,7 +30,7 @@ class ListingPage extends PureComponent {
 */
 
   filterProductsFromSize(size) {
-    let filterData = this.state.productData.filter(
+    const filterData = this.state.productData.filter(
       item => item.size.indexOf(size) > -1
     );
     this.setState({
