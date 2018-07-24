@@ -1,4 +1,4 @@
 export default {
-  productPrice: "17px",
-  productName: "22px"
+  productPrice: "22px",
+  productName: "17px"
 };

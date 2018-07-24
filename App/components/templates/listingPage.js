@@ -55,11 +55,15 @@ class ListingPage extends PureComponent {
 */
 
 ListingPage.getInitialProps = async ({ req }) => {
-  const res = await fetch(ServiceURI.getProductData);
-  const productData = await res.json();
-  return {
-    productData
-  };
+  try {
+    const res = await fetch(ServiceURI.getProductData);
+    const productData = await res.json();
+    return {
+      productData
+    };
+  } catch (e) {
+    return cb("Error occurred while fetching data");
+  }
 };
 
 export default ListingPage;
