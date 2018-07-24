@@ -1,6 +1,5 @@
 # E-Commerce Listing Page
 
-Next.js is a lightweight framework for static and server‑rendered applications.
 
 ## Technology Stack
 - Next.js (for server side rendering)
