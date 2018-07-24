@@ -21,8 +21,7 @@
 
 ## Scalable Frontend Architecture
 
-This Architecture with the methodology Atomic Design using a few cool things, like Styled-compomemt,ES6 and Next.js and ReactJS. 
-Feel free to test, change e adapt everything. 
+This Architecture with the methodology Atomic Design using a few cool things, like Styled-compomemt,ES6 and Next.js and ReactJS.
 
 [**Read full article**](https://medium.com/@danilowoznica/atomic-design-with-react-e7aea8152957)
 ```
