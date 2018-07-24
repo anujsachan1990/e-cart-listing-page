@@ -3,13 +3,14 @@ import withStyle from "../../../global/withStyle";
 import Image from "../../atoms/Image";
 import Tag from "../../atoms/Tag";
 import locale from "../../../global/lang";
+import config from "../../../global/config";
 
 const Product = props => {
   const { item, className } = props;
   return (
     <li className={className}>
       <Image
-        src={"/static/" + item.productImage}
+        src={config.staticPath + item.productImage}
         alt={item.productName + "image"}
       />
       <div>

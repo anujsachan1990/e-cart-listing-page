@@ -1,4 +1,5 @@
 export default {
+  staticPath: "/static/",
   productSizes: [
     {
       label: "Filter By Size",
