@@ -6,7 +6,6 @@
 - React JS (Isomorphic Behaviour)
 - Style Component (for Component Style Reusability)
 - Node-fetch (for serverside API call)
-- eslint-config-airbnb (ensure code quality)
 - YARN / NPM for package Dependencies
 - ES6 
 
