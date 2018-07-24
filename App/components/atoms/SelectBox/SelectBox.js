@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { PureComponent } from "react";
 import withStyle from "../../../global/withStyle";
 
@@ -29,7 +30,7 @@ class SelectBox extends PureComponent {
     const { options, className } = this.props;
     return (
       <div className={`form-group select-box ${className}`}>
-        <label className="sr-only" for="select-box">
+        <label className="sr-only" htmlFor="select-box">
           Select
         </label>
         <select
@@ -49,4 +50,8 @@ class SelectBox extends PureComponent {
   }
 }
 
+SelectBox.propTypes = {
+  options: PropTypes.array.isRequired,
+  className: PropTypes.string
+};
 export default withStyle(SelectBox);

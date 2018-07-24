@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import withStyle from "../../../global/withStyle";
 
 /** 
@@ -10,4 +11,10 @@ const Tag = props => {
   const { tagLabel, className } = props;
   return <div className={className}>{tagLabel}</div>;
 };
+
+Tag.propTypes = {
+  tagLabel: PropTypes.string.isRequired,
+  className: PropTypes.string
+};
+
 export default withStyle(Tag);

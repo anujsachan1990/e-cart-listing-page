@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import withStyle from "../../../global/withStyle";
 
 /** 
@@ -6,15 +7,7 @@ import withStyle from "../../../global/withStyle";
   *  @Src : Src is mendatory props to display images.
 */
 
-const Image = ({
-  className,
-  src,
-  placeholderSrc,
-  alt,
-  inheritedStyles,
-  ref,
-  ...other
-}) => (
+const Image = ({ className, src, placeholderSrc, alt, ref, ...other }) => (
   <img
     className={className}
     src={src}
@@ -26,5 +19,12 @@ const Image = ({
     }}
   />
 );
+
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+  placeholderSrc: PropTypes.string,
+  className: PropTypes.string
+};
 
 export default withStyle(Image);

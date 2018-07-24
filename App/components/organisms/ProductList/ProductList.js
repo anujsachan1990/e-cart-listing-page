@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Product from "../../molecules/Product";
 import ProductListElement from "./ProductList.style";
 import withStyle from "../../../global/withStyle";
@@ -15,6 +16,11 @@ const ProductList = props => {
       {items.map(item => <Product item={item} key={item.index} />)}
     </ProductListElement>
   );
+};
+
+ProductList.propTypes = {
+  items: PropTypes.array.isRequired,
+  className: PropTypes.string
 };
 
 export default ProductList;

@@ -1,4 +1,5 @@
 import { PureComponent, Fragment } from "react";
+import PropTypes from "prop-types";
 import fetch from "node-fetch";
 import ProductList from "../organisms/ProductList";
 import Select from "../atoms/SelectBox";
@@ -64,6 +65,10 @@ ListingPage.getInitialProps = async ({ req }) => {
   } catch (e) {
     return cb("Error occurred while fetching data");
   }
+};
+
+ListingPage.propTypes = {
+  productData: PropTypes.array
 };
 
 export default ListingPage;

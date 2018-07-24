@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import productStyle from "./Product.style";
 import withStyle from "../../../global/withStyle";
 import Image from "../../atoms/Image";
@@ -32,4 +33,18 @@ const Product = props => {
     </li>
   );
 };
+
+Product.propTypes = {
+  item: PropTypes.shape({
+    index: PropTypes.number.isRequired,
+    isSale: PropTypes.bool.isRequired,
+    isExclusive: PropTypes.bool.isRequired,
+    price: PropTypes.string.isRequired,
+    productImage: PropTypes.string.isRequired,
+    productName: PropTypes.string.isRequired,
+    size: PropTypes.array.isRequired
+  }),
+  className: PropTypes.string
+};
+
 export default withStyle(Product, productStyle);

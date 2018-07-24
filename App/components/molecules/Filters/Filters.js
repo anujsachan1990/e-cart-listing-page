@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import FilterStyle from "./Filters.style";
 import withStyle from "../../../global/withStyle";
 import SelectBox from "../../atoms/SelectBox";
@@ -22,5 +23,9 @@ const Filters = props => {
       />
     </div>
   );
+};
+Filters.propTypes = {
+  filterProducts: PropTypes.func.isRequired,
+  className: PropTypes.string
 };
 export default withStyle(Filters, FilterStyle);
