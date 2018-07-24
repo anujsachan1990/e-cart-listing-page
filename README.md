@@ -26,8 +26,7 @@ This Architecture with the methodology Atomic Design using a few cool things, li
 Feel free to test, change e adapt everything. 
 
 [**Read full article**](https://medium.com/@danilowoznica/atomic-design-with-react-e7aea8152957)
-
-
+```
 ├── components
 │   ├── atoms
 │   │   ├── Image
@@ -65,8 +64,9 @@ Feel free to test, change e adapt everything.
 └── styles
     ├── theme
     │   └── colors.js
+    └── typography.js
 
-
+```
 ## Next.js
 
 Next.js is a universal JavaScript framework that runs in the browser and the server. It offers developers an easy way to get started, and as it uses React.js for templating it is also a straightforward way for developers with React experience to get productive fast.
