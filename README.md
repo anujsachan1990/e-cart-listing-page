@@ -20,7 +20,7 @@ Next.js is a lightweight framework for static and server‑rendered applications
 - yarn run dev or npm run dev
 - open url [http://localhost:3000/](http://localhost:3000/)
 
-## Forntend Architecture
+## Scalable Frontend Architecture
 
 This Architecture with the methodology Atomic Design using a few cool things, like Styled-compomemt,ES6 and Next.js and ReactJS. 
 Feel free to test, change e adapt everything. 
