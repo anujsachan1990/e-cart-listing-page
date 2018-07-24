@@ -1,1 +1,1 @@
-export { default } from '../app/components/templates/listingPage';
+export { default } from "../App/components/templates/listingPage";
